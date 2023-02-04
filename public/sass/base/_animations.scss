@@ -1,0 +1,33 @@
+@keyframes entryText {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-25vw);
+    }
+}
+
+@keyframes globe {
+    0% {
+        transform: translate(0, 0.8%);
+    }
+
+    100% {
+        transform: translate(18.5%, 0.8%);
+    }
+}
+
+@keyframes globeGlow {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+
+    100% {
+        transform: translate(10%, -50%);
+    }
+}

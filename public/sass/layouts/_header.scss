@@ -1,0 +1,77 @@
+.header {
+    height: 100.5vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+
+    &__title {
+        position: relative;
+        height: 80vh;
+    }
+
+    &__text {
+        position: relative;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        z-index: 20;
+
+        margin-left: 40vw;
+
+        animation: entryText 2s ease-in forwards;
+    }
+
+    &__canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+
+        z-index: 10;
+        margin-top: -8rem;
+        animation: globe 2s ease-in forwards;
+    }
+
+    &__primary {
+        font-family: "Oxanium", sans-serif;
+        text-transform: uppercase;
+        font-size: 10rem;
+        font-weight: 700;
+        line-height: 1.5;
+
+        position: relative;
+        display: inline-block;
+        background-image: $gradient-primary;
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+
+        color: transparent;
+    }
+
+    &__secondary {
+        font-family: "Oxanium", sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        color: #60b6f1;
+    }
+}
+
+.earth__glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 49rem;
+    height: 49rem;
+    border-radius: 50%;
+    box-shadow: 0 0 80px 20px #0077b6;
+
+    background-color: transparent;
+    z-index: 40;
+
+    animation: globeGlow 2s ease-in forwards;
+}
