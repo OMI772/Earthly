@@ -11,7 +11,7 @@
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url .",
     "build:js": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js --public-url .",
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Om Chimanpure",
   "license": "ISC",
